@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        Nhập số: <input type="text" id="number" value="0"/>
+        <input type="button" value="In kết quả" onclick="print_number()"/>
+        <div id="result">
+
+        </div>
+    </body>
+    <script>
+    function print_number() {
+        var number = document.getElementById("number").value;
+        number = parseInt(number);
+        var html='';
+        for (var i=1; i <= number; i++)
+        {
+        html += i + '<br>';
+    }
+    document.getElementById("result").innerHTML = html;
+}
+    </script>
+</html>

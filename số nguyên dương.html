@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        5
+    </body>
+    <script>
+        let SoNguyenDuong = (value) => {
+            return (Number.isInteger(value) && value > 0);
+            
+        };
+        let SoNguyenAm = (value) => {
+            return (Number.isInteger(value) && value < 0);
+        };
+        console.log( "So 1 la so nguyen duong"+":"+ SoNguyenDuong(1));
+        console.log( "So 1.2 la so nguyen duong"+":"+ SoNguyenDuong(1.2));
+        console.log( "So -3 la so nguyen duong"+":"+ SoNguyenDuong(-3));
+        console.log( "So 0 la so nguyen duong"+":"+ SoNguyenDuong(0));
+        console.log( "So -5 la so nguyen am"+":"+ SoNguyenAm(-5));
+        console.log( "So -1.2 la so nguyen am"+":"+ SoNguyenAm(-1.2));
+        console.log( "So 9 la so nguyen am"+":"+ SoNguyenAm(9));
+        console.log( "So 5 la so nguyen am"+":"+ SoNguyenAm(5));
+    </script>
+</html>
